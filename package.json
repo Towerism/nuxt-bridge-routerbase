@@ -9,7 +9,7 @@
     "generate": "nuxi generate"
   },
   "dependencies": {
-    "nuxt-edge": "latest"
+    "nuxt": "2.16.x"
   },
   "devDependencies": {
     "@nuxt/bridge": "npm:@nuxt/bridge-edge@latest"
