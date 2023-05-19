@@ -1,21 +1,12 @@
-import fs from 'node:fs'
-import path from 'node:path'
 import { defineNuxtConfig } from '@nuxt/bridge'
 import { fromNodeMiddleware } from 'h3';
 
 export default defineNuxtConfig({
   app: {
     baseURL: '/app/',
-    assetsPath: '/_nuxt/',
-    buildAssetsDir: '/_nuxt/',
-    cdnUrl: '/app/'
   },
-  basePath: '/app',
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-  // router: {
-  //   base: "/ui_template_sub/"
-  // }
   hooks: {
     ready(nuxt) {
       // https://github.com/nuxt/bridge/issues/607
